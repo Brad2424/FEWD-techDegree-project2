@@ -190,13 +190,12 @@ header {
     .pro-5,
     .pro-6 {
         float: left;
-        width: 45%;
+        width: 50%;
     }
 
     .portfolio p {
         padding: 0 20px;
     }
-
 
     .contact {
         max-width: 60%;
