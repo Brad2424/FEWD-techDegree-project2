@@ -1,0 +1,269 @@
+/* GLOBAL RULES */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Encode Sans Semi Expanded';
+}
+
+/* ==================
+BASE ELEMENT STYLES
+===================== */
+
+body {
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+}
+
+.portfolio {
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: rgb(80, 80, 80);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.main-nav li {
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+    display: block;
+}
+
+.name {
+    text-transform: none;
+}
+
+header img {
+    width: 70%;
+}
+
+header p {
+    color: rgb(160, 160, 160);
+}
+
+.portfolio img {
+    max-width: 100%;
+}
+
+.portfolio p {
+    padding: 0 10px;
+}
+
+.pro-1,
+.pro-2,
+.pro-3,
+.pro-4,
+.pro-5,
+.pro-6 {
+    margin: auto;
+    width: 90%;
+}
+
+p {
+    color: rgb(80, 80, 80);
+    font-size: 0.9rem;
+}
+
+footer {
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: rgb(80, 80, 80);
+    font-size: .8rem;
+    border-top: solid 1px rgb(160, 160, 160);
+    width: 95%;
+    margin: auto;
+}
+
+footer ul {
+    margin: 0;
+    float: right;
+}
+
+footer li {
+    display: inline-block;
+}
+
+h1 {
+    color: rgb(80, 80, 80);
+}
+
+h2 {
+    color: rgb(80, 80, 80);
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding: 40px 0;
+    margin-top: 40px;
+    font-weight: 800;
+}
+
+.contact {
+    margin: 0 auto 60px auto;
+}
+
+.contact h2 {
+    padding: 50px 0px 20px 0px;
+    margin-top: 0;
+}
+
+.contact p {
+    color: rgb(160, 160, 160);
+}
+
+h3 {
+    color: rgb(80, 80, 80);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.bottom-nav {
+    display: none;
+}
+
+
+/* ==================
+BASE LAYOUT
+===================== */
+
+.wrapper {
+    text-align: center;
+}
+
+img {
+    max-width: 100%
+}
+
+.main-nav {
+    margin-bottom: 30px;
+}
+
+header {
+    width: 90%;
+    margin: auto;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+    header {
+        width: 95%;
+    }
+
+    header img {
+        float: right;
+        width: 40%;
+        padding-left: 10px;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        background-color: rgb(245, 245, 245);
+    }
+
+    header p {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .portfolio-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .pro-1,
+    .pro-2,
+    .pro-3,
+    .pro-4,
+    .pro-5,
+    .pro-6 {
+        float: left;
+        width: 45%;
+    }
+
+    .portfolio p {
+        padding: 0 20px;
+    }
+
+
+    .contact {
+        max-width: 60%;
+    }
+
+    .bottom-nav {
+        display: inline-block;
+    }
+
+    .back-to-top-mobile {
+        display: none;
+    }
+
+    footer li {
+        margin: auto 0 auto 20px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+}
+@media (min-width: 1024px) {
+ 
+     nav {
+         width: 95%;
+         margin: auto;
+         text-align: left;
+     }
+
+     nav ul {
+         float: right;
+     }
+
+     nav .name {
+         display: inline-block;
+     }
+
+     .main-nav li {
+         padding: 0;
+     }
+
+    .portfolio-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .pro-1,
+    .pro-2,
+    .pro-3,
+    .pro-4,
+    .pro-5,
+    .pro-6 {
+        float: left;
+        width: 32%;
+        margin: 0 auto;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
